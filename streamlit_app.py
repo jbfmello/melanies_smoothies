@@ -1,6 +1,7 @@
 import streamlit as st
 import snowflake.snowpark.functions as F
 import requests as r
+import pandas as pd
 from snowflake.snowpark.context import get_active_session
 
 
