@@ -8,7 +8,7 @@ cnx = st.connection("snowflake")
 session = cnx.session()
 
 smoothiefroot_response = r.get("https://my.smoothiefroot.com/api/fruit/watermelon")  
-st.text(smoothiefroot_response)
+sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
 st.title(":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
 st.write(
