@@ -7,6 +7,9 @@ from snowflake.snowpark.context import get_active_session
 cnx = st.connection("snowflake")
 session = cnx.session()
 
+smoothiefroot_response = r.get("[https://my.smoothiefroot.com/api/fruit/watermelon](https://my.smoothiefroot.com/api/fruit/watermelon)")  
+st.text(smoothiefroot_response)
+
 st.title(":cup_with_straw: Customize Your Smoothie :cup_with_straw:")
 st.write(
   """Choose the fruits you want in your custom Smoothie!
